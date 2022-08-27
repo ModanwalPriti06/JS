@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+function bind(){
+var up=["Jaunpur","Varanshi","Lucknow","Allahabad","Azamgarh"];
+var mp=["Devas","Bhopal","Indore"];
+var bh=["patna","chapra","Gaya"];
+var st=document.getElementBYId("sel");
+var state=st.value;
+var i;
+var city=document.getElementBYId("city");
+var dis="";
+if(state=="Uttar predesh"){
+for(i=0;i<up.length;i++)
+{
+dis+="<option>"+up[i]+"</option>";
+}
+city.innerHTML=dis;
+alert(dis);
+}
+else if(state==MP){}
+else if(state==Bihar){}
+
+
+
+}
+</script>
+</head>
+<body>
+<select id="sel" onchange="bind()">
+<option></option>
+<option>Uttar predesh</option>
+<option>Goa</option>
+<option>MP</option>
+<option>Bihar</option>
+</select></br>
+Your City:
+<select id="city">
+
+</select>
+</body>
+</html>

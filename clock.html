@@ -1,0 +1,67 @@
+<html>
+	 <head>
+	 <title>Anti clock in our desktop</title>
+	 <style>
+	 #box{
+	 width:1200px;
+	 height:400px;
+	 background:white;
+	 margin:0px auto;
+	 }
+	  body{
+	  text-align:center;
+	  background:black;
+	  font-size:100px;
+	  color:red;
+	  font-family:sans-serif;
+	  }
+	  .col{
+	  height:350px;
+	  width:350px;
+	  float:left;
+	  margin:25px;
+	  background:red;
+	  color:white;
+	  box-shadow:20px 20px 20px black inset;
+	  font-size:180px;
+	  text-align:center;
+	  line-height:350px;
+	  border-redius:200px;
+	  text-shadow:5px 5px 5px black;
+	  circle:50%;
+	  }
+	  </style>
+	  <script>
+	  function demo()
+	  {
+	  
+	  var dv1=document.getElementById("s");
+	  var sec=dv1.innerText;
+	  dv1.innerText=parseInt(sec)+1;
+	  var dv2=document.getElementById("m");
+	  if(parseInt(sec)==5)
+	  {
+	  var min=dv2.innerText;
+	  dv2.innerText=parseInt(min)+1;
+	   dv1.innerText="0";
+	  }
+	  var dv3=document.getElementById("h");
+	  if(parseInt(min)==5){
+	  var hor=dv3.innerText;
+	  dv3.innerText=parseInt(hor)+1;
+	   dv2.innerText="0";
+	  }
+	  
+	  }
+	    setInterval("demo()",1000);
+	  </script>
+	 </head>
+	 <body>
+	 <h3>&#128502;<u>Digital clock</u>&#128502;</h3>
+	 <div id="box">
+	 <div class="col" Id="h">00</div>
+	 <div class="col" Id="m">00</div>
+	 <div class="col" Id="s">00</div>
+	 </div>
+	 </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+function keyp()
+{
+var a=document.getElementById("a");
+var sp=document.getElementById("len1");
+sp.innerText="Length:"+a.value.length;
+}
+function keyup()
+{
+var b=document.getElementById("b");
+var sp1=document.getElementById("len2");
+sp1.innerText="Length:"+b.value.length;
+}
+function fun()
+{
+var c=document.getElementById("c");
+var sp2=document.getElementById("len3");
+sp2.innerText="Length:"+c.value.length;
+
+}
+function foc()
+{
+var d=document.getElementById("d");
+var sp3=document.getElementById("len4");
+sp3.innerText="Length:"+d.value.length;
+
+}
+</script>
+</head>
+<body>
+<input type="text" id="a" onkeypress="keyp()" placeholder="OnkeyPress">
+<span id="len1"></span></br>
+<input type="text" id="b" placeholder="Onkeyup" onkeyup="keyup()">
+<span id="len2"></span></br>
+<input type="text" id="c" placeholder="Onblur"  onblur="fun()">
+<span id="len3"></span></br>
+<input type="text" id="d" placeholder="Onfocus"  onfocus="foc()">
+<span id="len4"></span></br>
+</body>
+</html>

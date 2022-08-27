@@ -1,0 +1,34 @@
+<!--onclick and show image -->
+<html>
+<head>
+	<style>
+
+		/* Set display to none for image*/
+		#image {
+			display: none;
+			height:200px;
+			width:200px;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<!-- Add id to image -->
+		<img id="image" src="E:/image/baby3.jpg"/>
+	</div>
+	<button type="button" onclick="show()" id="btnID">Show Image</button>
+
+	<script>
+		function show() {
+			/* Access image by id and change
+			the display property to block*/
+			document.getElementById('image')
+					.style.display = "block";
+			document.getElementById('btnID')
+					.style.display = "block";
+		}
+	</script>
+</body>
+
+</html>

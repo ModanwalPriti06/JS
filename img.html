@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+var arr=["l2.jpg","w2.jpg","ww.jpg","cat3.jpg"];
+var i=0;
+function slider()
+{
+var a=document.getElementById("img1");
+a.src="E:\image/"+arr[i];
+i++;
+if(i==arr.length)
+{
+i=0;
+}
+}
+setInterval("slider()",2000);
+</script>
+</head>
+<body>
+<img src="E:\image\w4.jpg" height="600px" width="1300px" id="img1">
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function image()
+{
+var arr=["red",'blue',"black"];
+var res="<ul>";
+for(i=0;i<arr.length;i++)
+{
+res+="<li>"+arr[i]+"</li>";
+}
+res+="</ul>";
+var sp=document.getElementById("back");
+sp.innerHTML=res;
+}
+</script>
+</head>
+<body>
+<span id="back"/></span>
+</br>
+<button onclick="image()">Click me</button>
+</body>
+</html>

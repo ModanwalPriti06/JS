@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+function image()
+{
+var pass1=document.getElementById("pass");
+var btn1=document.getElementById("btn");
+var btnval=btn1.value;
+if(btnval=="Show")
+{
+pass1.type="text";
+btn1.value="Hide";
+
+}
+else{
+pass1.type="password";
+btn1.value="show";
+pass1.style.border="1px solid red";
+}
+}
+</script>
+</head>
+<body>
+<input type="password" id="pass">
+<input type="button" onclick="image()" id="btn" value="Show"/>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+function calsi(obj)//here obj is a variable we wright any variable name
+{
+var v1=document.getElementById("txt1");
+var v2=document.getElementById("txt2");
+var sp=document.getElementById("spn");
+var val1=v1.value;
+var val2=v2.value;
+//alert(any_variable.value);
+if(obj.value=="+")
+{
+alert(parseInt(val1)+parseInt(val2));
+}
+else if(obj.value=="-")
+{
+alert(parseInt(val1)-parseInt(val2));
+}
+if(obj.value=="*")
+{
+alert(parseInt(val1)*parseInt(val2));
+}
+else if(obj.value=="/")
+{
+alert(parseInt(val1)*parseInt(val2));
+}
+}
+</script>
+</head>
+<body>
+<input type="text" id="txt1"></br></br>
+<input type="text" id="txt2"></br></br>
+<input type="button" id="plus" value="+" onclick="calsi(this)">
+<input type="button" id="sub" value="-" onclick="calsi(this)">
+<input type="button" id="mul" value="*" onclick="calsi(this)">
+<input type="button" id="div" value="/" onclick="calsi(this)">
+<span id="spn"></span>
+</body>
+</html>

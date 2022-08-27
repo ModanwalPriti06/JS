@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function fact(){   
+	var num=document.getElementById("txt");
+	var an=num.value;
+	var i,fact=1;
+	for(i=1;i<=an;i++)
+	{
+	fact=fact*i;}
+	var sp=document.getElementById("spn");
+	sp.innerText=parseInt(fact);}
+</script>
+</head><body>
+Enter a Number:<input type="text" id="txt"/></br>
+<input type="button" onclick="fact()" value="fact"/></br>
+<h2><span id="spn"></span></h2>
+</body>
+</html>

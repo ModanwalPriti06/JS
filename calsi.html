@@ -1,0 +1,51 @@
+<html>
+<head>
+<script>
+function plus()
+{
+var v1=document.getElementById("txt1");
+var v2=document.getElementById("txt2");
+var sp=document.getElementById("spn");
+var val1=v1.value;
+var val2=v2.value;
+sp.innerText=parseInt(val1)+parseInt(val2);
+}
+function Sub()
+{
+var v1=document.getElementById("txt1");
+var v2=document.getElementById("txt2");
+var sp=document.getElementById("spn");
+var val1=v1.value;
+var val2=v2.value;
+sp.innerText=parseInt(val1)-parseInt(val2);
+}
+function Multi()
+{
+var v1=document.getElementById("txt1");
+var v2=document.getElementById("txt2");
+var sp=document.getElementById("spn");
+var val1=v1.value;
+var val2=v2.value;
+sp.innerText=parseInt(val1)*parseInt(val2);
+}
+function Div()
+{
+var v1=document.getElementById("txt1");
+var v2=document.getElementById("txt2");
+var sp=document.getElementById("spn");
+var val1=v1.value;
+var val2=v2.value;
+sp.innerText=parseInt(val1)/parseInt(val2);
+}
+</script>
+</head>
+<body>
+<input type="text" id="txt1"></br></br>
+<input type="text" id="txt2"></br></br>
+<input type="button" id="plus" value="+" onclick="plus()">
+<input type="button" id="sub" value="-" onclick="Sub()">
+<input type="button" id="multi" value="*" onclick="Multi()">
+<input type="button" id="div" value="/" onclick="Div()"></br>
+<span id="spn"></span>
+</body>
+</html>

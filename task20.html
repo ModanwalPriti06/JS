@@ -1,0 +1,17 @@
+<html>
+<head>
+<script>
+function table(){
+var a=Number(document.getElementById("txt").value);
+var i;
+for(i=1;i<=10;i++){
+var d=document.getElementById("tb");
+d.innerHTML+=(a*i)+"</br>";
+}}
+</script>
+</head><body>
+Enter Number:<input type="text" id="txt"></br></br>
+<input type="button" onclick="table()" value="click!"></br></br>
+Table is:<p id="tb"></p>
+</body>
+</html>

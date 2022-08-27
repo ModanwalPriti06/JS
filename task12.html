@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+function myclick()
+{
+var a=document.getElementById("s");
+var b=document.getElementById("s1");
+var out=a.innerhtml;
+var outer=b.innerhtml;
+a.innerhtml=outer;
+b.innerhtml=out;
+}
+function click()
+{
+var a=document.getElementById("s");
+var b=document.getElementById("s1");
+var out=a.innerhtml;
+var outer=b.innerhtml;
+a.innerhtml=out;
+b.innerhtml=outer;
+}
+</script>
+</head>
+<body>
+<div id="a" height="300px" width="600px">
+<div id="a1" height="300px" width="300px"  style="float:left;">
+<img src="E:/image/ww.jpg" id="s" height="100px" width="100px">
+</div>
+<div id="a2" height="300px" width="300px"  style="float:left;">
+<img src="E:/image/w4.jpg" id="s1" height="100px" width="100px">
+<button onclick="myclick()">>></button>
+<button onclick="click()"><<</button>
+</body>
+</html>

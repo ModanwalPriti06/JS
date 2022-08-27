@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+function password(){
+var a=document.getElementById("pas1");
+var b=document.getElementById("pas2");
+var ans1=a.value;
+var ans2=b.value;
+if(ans1!=ans2)
+{
+var d=document.getElementById("dd");
+d.innerText="Your Password and Confirm-password not match";
+}}
+</script>
+</head>
+<body>
+<input type="password" id="pas1" placeholder="password"/>
+<input type="password" id="pas2" placeholder="Confirm-password"/>
+<input type="button" id="btn" onclick="password()" value="submit"/></br>
+<div id="dd"></div>
+</body>
+</html>

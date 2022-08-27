@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+body{
+background:black;
+}
+#outer{
+height:400px;
+width:1200px;
+margin:25px auto;
+
+}
+.col{
+height:300px;
+width:300px;
+float:left;
+background:white;
+margin:50px;
+border-radius:50%;
+text-align:center;
+line-height:300px;
+font-size:100px;
+color:black;
+
+
+}
+h1{
+font-size:50px;
+color:white;
+text-align:center;
+}
+</style>
+<script>
+
+function demo()
+{
+var a=new Date();
+var h=document.getElementById("h");
+var m=document.getElementById("m");
+var s=document.getElementById("s");
+var hrs=a.getHours();
+if(hrs<12)
+{
+h.innerText=hrs;
+m.innerText=a.getMinutes();
+s.innerText=a.getSeconds()+"PM";
+}
+else
+hrs=hrs-12;
+{
+h.innerText=hrs;
+m.innerText=a.getMinutes();
+s.innerText=a.getSeconds()+"AM";
+}
+}
+setInterval("demo()",1000);
+</script>
+</head>
+<body>
+<h1>Digital clock</h1>
+<div id="outer">
+<div class="col" id="h">HH</div>
+<div class="col" id="m">MM</div>
+<div class="col" id="s">SS</div>
+</div>
+</body>
+</html>

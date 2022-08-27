@@ -1,0 +1,34 @@
+<html>
+	 <head>
+		 <title>For each loop</title>
+	 </head>
+	 <body>
+	 <script>
+		 var a={
+			fname: "Priti",
+			lname: "Modanwal",
+			age: 18,
+			email: "pritivns612@gmail.com",
+			
+			favmovie: ["Dhoom","ABCD","ABCD2"],
+			
+			book: function(){
+			 return "javascript";},
+			 
+			 fullname: function(){
+				return this.fname+" "+this.lname; 
+				}
+			}
+			//console.log(a);
+			//console.log(a.fname);
+			//document.write(a.fname+"<br>");
+			//document.write(a.lname+"<br>");
+			//document.write(a.age);
+			document.write(a.favmovie[2]+"<br>");
+			document.write(a.book()+"<br>");
+			document.write(a.fullname());
+		 
+	 </script>
+		 
+	 </body>
+</html>

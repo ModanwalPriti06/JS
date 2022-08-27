@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function myclick()
+{
+var a=document.getElementById("text1");
+var s=a.value;
+var b=document.getElementById("text2");
+var p=b.value;
+var set=document.getElementById("span1");
+set.innerText="Result is:"+(parseInt(p)+parseInt(s));
+}
+</script>
+</head>
+<body>
+<input type="text" id="text1" placeholder="sec num"/>
+<input type="text" id="text2" placeholder="first num"/>
+<button onclick="myclick()">click me!</button>
+<span id="span1"></span>
+</body>
+</html>
